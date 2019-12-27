@@ -30,3 +30,8 @@ atlas-create-jira-plugin-module
 atlas-mvn package，重新打包
 
 浏览器刷新，点击我的子菜单
+
+添加 ECharts
+
+添加 REST Plugin Module
+

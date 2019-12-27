@@ -21,6 +21,7 @@ public class MyPluginComponentImpl implements MyPluginComponent
         this.applicationProperties = applicationProperties;
     }
 
+    @Override
     public String getName()
     {
         if(null != applicationProperties)

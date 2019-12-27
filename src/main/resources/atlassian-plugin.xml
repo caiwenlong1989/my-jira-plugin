@@ -15,8 +15,8 @@
     <dependency>com.atlassian.auiplugin:ajs</dependency>  
     <resource type="download" name="my-jira-plugin.css" location="/css/my-jira-plugin.css"/>  
     <resource type="download" name="my-jira-plugin.js" location="/js/my-jira-plugin.js"/>  
-    <resource type="download" name="echarts.min.js" location="/js/echarts.min.js"/>
-    <resource type="download" name="images/" location="/images"/>
+    <resource type="download" name="echarts.min.js" location="/js/echarts.min.js"/>  
+    <resource type="download" name="images/" location="/images"/>  
     <context>my-jira-plugin</context> 
   </web-resource>  
   <web-item name="myItem" i18n-name-key="my-item.name" key="my-item" section="system.top.navigation.bar" weight="1000"> 
@@ -30,7 +30,7 @@
   <web-item name="myEcharts" i18n-name-key="my-echarts.name" key="my-echarts" section="my-item-link/my-section" weight="1000"> 
     <description key="my-echarts.description">The myEcharts Plugin</description>  
     <label key="my-echarts.label"/>  
-    <link linkId="my-echarts-link">/secure/EchartsDemoAction!default.jspa</link>
+    <link linkId="my-echarts-link">/secure/EchartsDemoAction!default.jspa</link> 
   </web-item>  
   <webwork1 key="echarts-demo" name="EchartsDemo" i18n-name-key="echarts-demo.name"> 
     <description key="echarts-demo.description">The EchartsDemo Plugin</description>  
@@ -41,5 +41,8 @@
         <view name="error">/templates/echarts-demo/error.vm</view> 
       </action> 
     </actions> 
-  </webwork1>
+  </webwork1>  
+  <rest name="Server Data" i18n-name-key="server-data.name" key="server-data" path="/serverData" version="1.0">
+    <description key="server-data.description">The Server Data Plugin</description>
+  </rest>
 </atlassian-plugin>
