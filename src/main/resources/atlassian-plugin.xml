@@ -28,7 +28,17 @@
   </web-section>  
   <web-item name="myEcharts" i18n-name-key="my-echarts.name" key="my-echarts" section="my-item-link/my-section" weight="1000"> 
     <description key="my-echarts.description">The myEcharts Plugin</description>  
-    <label key="my-echarts.label"></label>  
-    <link linkId="my-echarts-link">/secure/EchartsDemoAction!default.jspa</link>
-  </web-item>
+    <label key="my-echarts.label"/>  
+    <link linkId="my-echarts-link">/secure/EchartsDemoAction!default.jspa</link> 
+  </web-item>  
+  <webwork1 key="echarts-demo" name="EchartsDemo" i18n-name-key="echarts-demo.name"> 
+    <description key="echarts-demo.description">The EchartsDemo Plugin</description>  
+    <actions> 
+      <action name="com.atlassian.tutorial.jira.webwork.EchartsDemoAction" alias="EchartsDemoAction"> 
+        <view name="success">/templates/echarts-demo/success.vm</view>  
+        <view name="input">/templates/echarts-demo/input.vm</view>  
+        <view name="error">/templates/echarts-demo/error.vm</view> 
+      </action> 
+    </actions> 
+  </webwork1>
 </atlassian-plugin>

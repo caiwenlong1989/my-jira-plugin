@@ -24,3 +24,9 @@ atlas-create-jira-plugin-module
 atlas-mvn package，重新打包
 
 浏览器刷新，看到我的子菜单
+
+atlas-create-jira-plugin-module
+生成 Webwork Plugin
+atlas-mvn package，重新打包
+
+浏览器刷新，点击我的子菜单
