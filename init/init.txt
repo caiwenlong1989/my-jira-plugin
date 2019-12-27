@@ -12,3 +12,9 @@ atlas-run，重新启动
 
 http://localhost:2990/jira，浏览器访问
 
+atlas-create-jira-plugin-module
+生成 Web Item
+生成 Web Section
+atlas-mvn package，重新打包
+
+浏览器刷新，看到我的菜单
