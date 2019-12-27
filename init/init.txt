@@ -1,0 +1,14 @@
+
+atlas-create-jira-plugin，构建项目
+
+atlas-run，生成target
+
+Ctrl+C，停止
+
+添加mysql-jar到target/container/tomcat8x/apache-tomcat-8.5.35/lib
+修改target/jira/home/dbconfig.xml
+
+atlas-run，重新启动
+
+http://localhost:2990/jira，浏览器访问
+
