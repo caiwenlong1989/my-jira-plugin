@@ -17,13 +17,18 @@
     <resource type="download" name="my-jira-plugin.js" location="/js/my-jira-plugin.js"/>  
     <resource type="download" name="images/" location="/images"/>  
     <context>my-jira-plugin</context> 
-  </web-resource>
+  </web-resource>  
   <web-item name="myItem" i18n-name-key="my-item.name" key="my-item" section="system.top.navigation.bar" weight="1000"> 
     <description key="my-item.description">The myItem Plugin</description>  
     <label key="my-item.label"/>  
-    <link linkId="my-item-link"></link>
+    <link linkId="my-item-link"/> 
+  </web-item>  
+  <web-section name="mySection" i18n-name-key="my-section.name" key="my-section" location="my-item-link" weight="1000"> 
+    <description key="my-section.description">The mySection Plugin</description> 
+  </web-section>  
+  <web-item name="myEcharts" i18n-name-key="my-echarts.name" key="my-echarts" section="my-item-link/my-section" weight="1000"> 
+    <description key="my-echarts.description">The myEcharts Plugin</description>  
+    <label key="my-echarts.label"></label>  
+    <link linkId="my-echarts-link">/secure/EchartsDemoAction!default.jspa</link>
   </web-item>
-  <web-section name="mySection" i18n-name-key="my-section.name" key="my-section" location="my-item-link" weight="1000">
-    <description key="my-section.description">The mySection Plugin</description>
-  </web-section>
 </atlassian-plugin>
